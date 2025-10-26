@@ -55,7 +55,7 @@ Green Earth is a tree plantation web application aimed at encouraging users to p
 
 ## Live Demo
 
-> Open `https://green-earth-website-project.netlify.app/` in your browser and interact with the application.
+> Open https://green-earth-website-project.netlify.app/ in your browser and interact with the application.
 
 ---
 
