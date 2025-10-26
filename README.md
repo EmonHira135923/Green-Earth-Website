@@ -1,225 +1,71 @@
-#### 7) Create a README file to answer the following question-
+# Six Assignment - 06 | Green Earth
 
-#### 1) What is the difference between var, let, and const?
+## Project Overview
 
-#### 2) What is the difference between map(), forEach(), and filter()?
+Green Earth is a tree plantation web application aimed at encouraging users to plant trees and contribute to a greener planet. Users can browse various plants, view details, add them to a cart, and donate for planting trees.
 
-#### 3) What are arrow functions in ES6?
+---
 
-#### 4) How does destructuring assignment work in ES6?
+## Features
 
-#### 5) Explain template literals in ES6. How are they different from string concatenation?
+- Responsive navigation bar with dropdown menu for mobile devices.
+- Hero section with images and call-to-action buttons.
+- Browse and filter plants by categories.
+- View plant details in a modal popup.
+- Add plants to cart with dynamic total price calculation.
+- Remove items from the cart.
+- Donation form with user input for name, email, and number of trees.
+- Campaign section explaining the initiative.
+- Impact section showing trees planted, communities involved, and countries reached.
 
-<-------------------- Ans to the All of Question ---------------------------->
+---
 
-#### 1) What is the difference between var, let, and const?
+## Technologies Used
 
-<-------------------- Ans to the Q. NO - 01 ---------------------------->
+- **HTML5** – Markup for structure.
+- **CSS3 & Tailwind CSS** – Styling and responsive design.
+- **DaisyUI** – UI components (modals, buttons, cards, etc.).
+- **Font Awesome** – Icons.
+- **JavaScript (Vanilla JS)** – Dynamic DOM manipulation, fetch API for retrieving plant data.
+- **External APIs** – `https://openapi.programming-hero.com/api` for plant and category data.
 
-### var – 3 Points
+---
 
-1 --> var can Re-Declare and Re-Assign.
+---
 
-2 --> It has Function Scope.
+## How to Use
 
-3 --> It is Hoisted and you can change its value any time.
+1. Open `index.html` in any modern browser.
+2. Browse plants and categories.
+3. Click on a plant name to see details in a modal.
+4. Add plants to the cart to track total price.
+5. Remove items from the cart if needed.
+6. Fill out the donation form to contribute to planting trees.
 
-# var Example :
+---
 
-let FullName = "Emon Hossain Hira";
-FullName = "Akram"; -------> Right
+## API Usage
 
-# Re-Assign Value Anytime that you want
+- **Plants Data**: `https://openapi.programming-hero.com/api/plants`
+- **Categories Data**: `https://openapi.programming-hero.com/api/categories`
+- **Category-specific Plants**: `https://openapi.programming-hero.com/api/category/{category_id}`
+- **Plant Details**: `https://openapi.programming-hero.com/api/plant/{plant_id}`
 
-# Same Varriable Use
+---
 
-let FullName = "Declare"; -----> Right
-console.log(FullName);
+## Live Demo
 
-### Let – 3 Points
+> Open `index.html` in your browser and interact with the application.
 
-1 --> let can Re-Assign but cannot Re-Declare in the same block.
+---
 
-2 --> It has Block Scope.
+## Author
 
-3 --> It is not usable before declaration.
+**ইমন হোসেন হীরা**  
+CSE Student, Laxmipur Polytechnic Institute
 
-# let Example :
+---
 
-let FullName = "Emon Hossain Hira";
-FullName = "Akram"; -------> Right
+## License
 
-# Re-Assign Value Anytime that you want
-
-# Same Varriable Not Use
-
-let FullName = "Not Declare"; -----> Wrong
-console.log(FullName);
-
-### Const – 3 Points
-
-1 --> const cannot Re-Declare and cannot Re-Assign.
-
-2 --> It has Block Scope (only inside {} works).
-
-3 --> The variable reference is fixed, but for objects/arrays you can still change their contents.
-
-# const Example
-
-const FirstName = "Emon";
-FirstName = "Not Assign";
-
-# Not Change
-
-# Not Use Same Varriable
-
-const FirstName = "Not Declare";
-
-console.log(FullName);
-
-#### 2) What is the difference between map(), forEach(), and filter()?
-
-<-------------------- Ans to the Q. NO - 02 ---------------------------->
-
-### map() – 3 Points
-
-1 --> map() Always Return new array .
-
-2 --> Doesn't Change The Old Array.
-
-3 --> Creates a new array with the results of applying a function to each element.
-
-# map() Example :
-
-const array = [1, 2, 3];
-
-const val = array.map((val) => {
-console.log(val \* 3);
-});
-
-# Not Change Old Array
-
-console.log("array", array);
-
-### ForEach() – 3 Points
-
-1 --> ForEach() Doesn't Return new array .
-
-2 --> ForEach() Use For Array.
-
-3 --> Doesn't Break When You Use This and Doesn't Change New Array .
-
-# ForEach() Example
-
-const array = [1, 2, 3, 4, 5];
-array.forEach((val) => {
-console.log(val);
-});
-
-### Filter() – 3 Points
-
-1 --> Filter() Return Value If Condition True .
-
-2 --> ForEach() Doesn't Change New Array.
-
-3 --> If Condition True That's Reduce Array Size and Condition False Array Don't Change .
-
-# Filter() Example
-
-const array = [1, 2, 3, 4, 5];
-const filtervalue = array.filter((val) => {
-return val > 3;
-});
-
-console.log(filtervalue);
-
-#### 3) What are arrow functions in ES6?
-
-<-------------------- Ans to the Q. NO - 03 ---------------------------->
-
-# Arrow Function are a new way of writing function introduced in ES6 .
-
-## Doesn't Use Function KeyWord.
-
-### const val = () => {}; this way declare arrow function .
-
-#### this keyword find parents scope.
-
-# Arrow Function Example :::
-
-const val = () => {
-let emon;
-emon = "emon hossain hira";
-console.log(emon);
-};
-
-val();
-
-#### 4) How does destructuring assignment work in ES6?
-
-<-------------------- Ans to the Q. NO - 04 ---------------------------->
-
-# Destructuring assignment means taking small pieces out of a big box and putting them in separate boxes.
-
-## Destructuring permission do it all in one line.
-
-### Works With Array,Object,Function.
-
-### Rename Variable.
-
-# Destructuring Example
-
-const person = {
-name: "Emon",
-age: 22,
-};
-
-const { name, age } = person;
-
-console.log({ name, age });
-
-#### 5) Explain template literals in ES6. How are they different from string concatenation?
-
-<-------------------- Ans to the Q. NO - 05 ---------------------------->
-
-# ` ` this keyword called backtics.
-
-## ${} this keyword use for called varriable in backticks keyword.
-
-### You can write multi-line strings without \n.
-
-# template literals Example
-
-const emon = "Emon Hossain Hira";
-const person = "I Don't Know";
-
-const templateliterals = `My Name is ${emon}. ${person} this person`;
-console.log(templateliterals);
-
-# Template Literals and String Concation some difference
-
-# String Concation
-
-1 ---> + sign use for String Concation
-
-# Template Literals
-
-1 ---> ` ` sign use for backticks
-
-## String Concation
-
-2 ---> Variable Manually create and use + sign String Concation
-
-## Template Literals
-
-2 ---> Variable Automatic create and use ${} sign Template Literals
-
-### String Concation
-
-3 ---> Harder to read with many variables
-
-### Template Literals
-
-3 ---> Cleaner and easier to read
-
-###### Complete Answer
+This project is open-source and free to use.
