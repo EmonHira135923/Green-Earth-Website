@@ -1,4 +1,4 @@
-# Six Assignment - 06 | Green Earth
+# Green Earth
 
 ## Project Overview
 
@@ -55,14 +55,15 @@ Green Earth is a tree plantation web application aimed at encouraging users to p
 
 ## Live Demo
 
-> Open `index.html` in your browser and interact with the application.
+> Open `https://green-earth-website-project.netlify.app/` in your browser and interact with the application.
 
 ---
 
 ## Author
 
-**ইমন হোসেন হীরা**  
-CSE Student, Laxmipur Polytechnic Institute
+**Emon Hira**
+
+- GitHub: [https://github.com/EmonHira135923](https://github.com/EmonHira135923)
 
 ---
 
